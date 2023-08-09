@@ -51,8 +51,14 @@ def main():
             elif sel == 3:
                 print("Goodbye!")
                 break
-        except:
-            print("Invalid selection!")
+        except Exception as e:
+            if type(sel) != int or sel > 3 or sel < 1:
+                print("Invalid selection!")
+            else:
+                print("Unknown error!")
+                print(e)
+                
+
         
         input("PRESS ENTER")
 
