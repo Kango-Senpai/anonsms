@@ -1,0 +1,18 @@
+             _   _    ____    _   _      _____   __  __    _____ 
+     /\     | \ | |  / __ \  | \ | |    / ____| |  \/  |  / ____|
+    /  \    |  \| | | |  | | |  \| |   | (___   | \  / | | (___  
+   / /\ \   | . ` | | |  | | | . ` |    \___ \  | |\/| |  \___ \ 
+  / ____ \  | |\  | | |__| | | |\  |    ____) | | |  | |  ____) |
+ /_/    \_\ |_| \_|  \____/  |_| \_|   |_____/  |_|  |_| |_____/ 
+                                                                 
+                                                                 
+
+    1. Send SMS
+    2. Help
+    3. I'm done
+Take action: 1
+
+SMS destination: 1 000 000 0000
+SMS body: This is a test body
+textbelt api key? (Leave blank if none): 
+Message sent! 0 texts remaining.

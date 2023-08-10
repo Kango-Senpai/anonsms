@@ -5,9 +5,14 @@ from os import system as cmd
 from platform import platform
 
 banner = f"{Fore.CYAN + Style.BRIGHT}"
-with open("banner.txt",'r') as f:
+with open("banner.txt", 'r') as f:
     banner += f.read()
 banner += Style.RESET_ALL
+
+example_page = ""
+with open("help.txt", 'r') as f:
+    example_page = f.read()
+
 
 def send_sms(number:str, message:str, api_key:str = "textbelt"):
     data = {
@@ -39,7 +44,7 @@ def main():
         print("    3. I'm done" + Style.RESET_ALL)
 
         sel = input("Take action: ")
-        
+        print("\n")
         try:
             sel = int(sel)
             if sel == 1:
@@ -54,6 +59,11 @@ def main():
                     print(Fore.RED + Style.BRIGHT + "WARNING! Message length exceeds 160 characters and will not fit into one SMS!" + Style.RESET_ALL)
                 
                 send_sms(number, message, api_key)
+            elif sel == 2:
+                clear()
+                print(Fore.BLUE + "Usage example:" + Style.RESET_ALL)
+                print(example_page)
+                
             elif sel == 3:
                 print("Goodbye!")
                 break
@@ -63,7 +73,7 @@ def main():
             else:
                 print("Unknown error!")
                 print(e)
-        input("PRESS ENTER")
+        input("\n" + Fore.BLUE + "PRESS ENTER" + Style.RESET_ALL)
 
 if __name__ == "__main__":
     main()
