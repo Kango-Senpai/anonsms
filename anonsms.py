@@ -43,7 +43,7 @@ def main():
         try:
             sel = int(sel)
             if sel == 1:
-                number = input("SMS destination: ")
+                number = input("SMS destination: ").replace(" ","")
                 message = input("SMS body: ")
                 api_key = input("textbelt api key? (Leave blank if none): ").strip()
 
