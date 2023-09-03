@@ -18,5 +18,12 @@ def save_contact(name:str,number:str):
         with open(database_filename,'w') as f:
             f.write(json.dumps(data))
 
-    
-        
+def list_contacts():
+    try:
+        with open(database_filename,'r') as f:
+            contacts = json.loads(f.read())
+            print("Saved numbers:")
+            for a,b in contacts.items():
+                print(f"{a} : {b}")
+    except:
+        print("No saved numbers or file corrupt.")
