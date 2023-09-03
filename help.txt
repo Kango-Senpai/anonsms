@@ -16,3 +16,9 @@ SMS destination: 1 000 000 0000
 SMS body: This is a test body
 textbelt api key? (Leave blank if none): 
 Message sent! 0 texts remaining.
+
+SMS destination: Joh
+Autofilling to "John cell".
+SMS body: This is a test body
+textbelt api key? (Leave blank if none): 
+Message sent! 0 texts remaining.
