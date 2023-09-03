@@ -1,6 +1,6 @@
 import json
 
-database_filename = "saved_numbers.py"
+database_filename = "saved_numbers.json"
 
 def save_contact(name:str,number:str):
     contacts = {}
